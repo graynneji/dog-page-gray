@@ -1,11 +1,13 @@
-import Icon1 from "./assets/g6396.svg?react"
-import Icon2 from "./assets/Group.svg?react"
-import Icon3 from "./assets/Group(1).svg?react"
-import Icon4 from "./assets/001---Vet.svg?react"
-import Food from "./assets/Frame 1171276495.svg?react"
-import Shield from "./assets/shield-check.svg?react"
-import Payments from "./assets/Payments.svg?react"
-import Dog from "./assets/Rectangle 15.svg?react"
+
+import Icon1Src from "./assets/g6396.svg";
+import Icon2Src from "./assets/Group.svg";
+import Icon3Src from "./assets/Group(1).svg";
+import Icon4Src from "./assets/001---Vet.svg";
+import FoodSrc from "./assets/Frame 1171276495.svg";
+import ShieldSrc from "./assets/shield-check.svg";
+import PaymentsSrc from "./assets/Payments.svg";
+import DogSrc from "./assets/Rectangle 15.svg";
+
 import { KeyPointsCol, PhotoGridData, type KeyProps } from "./constants/index"
 import './App.css'
 import Buttons from "./components/Buttons"
@@ -24,16 +26,16 @@ const App: React.FC = () => {
 
         <div className='flex gap-[30px] items-center justify-center'>
           <div className='flex flex-col gap-20'>
-            <Descriptions title="Real Food" description="Wholesome recipes for dogs with real meat and veggies." avatar={<Icon1 />} color="#DCF9CA" />
+            <Descriptions title="Real Food" description="Wholesome recipes for dogs with real meat and veggies." avatar={<img src={Icon1Src} alt="Real Food Icon" />} color="#DCF9CA" />
 
-            <Descriptions title="Premium Ingredient" description="Elevating pet care with unmatched safety and quality." avatar={<Icon2 />} color="#F8F0D6" />
+            <Descriptions title="Premium Ingredient" description="Elevating pet care with unmatched safety and quality." avatar={<img src={Icon2Src} alt="Premium Ingredient Icon" />} color="#F8F0D6" />
 
           </div>
-          <Food />
+          <img src={FoodSrc} alt="Dog Food" />
           <div className="flex flex-col gap-20">
-            <Descriptions title="Made Fresh" description="We prioritize maintaining the integrity of whole foods and nutrition." avatar={<Icon3 />} color="#C8F2E7" />
+            <Descriptions title="Made Fresh" description="We prioritize maintaining the integrity of whole foods and nutrition." avatar={<img src={Icon3Src} alt="Made Fresh Icon" />} color="#C8F2E7" />
 
-            <Descriptions title="Vet Developed" description="We raise the bar for dog nutrition, surpassing industry expectations." avatar={<Icon4 />} color="#F7CABD" />
+            <Descriptions title="Vet Developed" description="We raise the bar for dog nutrition, surpassing industry expectations." avatar={<img src={Icon4Src} alt="Vet Developed Icon" />} color="#F7CABD" />
           </div>
 
         </div>
@@ -46,10 +48,10 @@ const App: React.FC = () => {
 
           <div className="flex gap-6 justify-center items-center">
             <div className="flex gap-2 justify-center items-center">
-              <Shield />
+              <img src={ShieldSrc} alt="Shield" />
               <span className="text-[13px] leading-[150%] tracking-[0.5px] text-secondary">30-day money back guarantee</span>
             </div>
-            <Payments />
+            <img src={PaymentsSrc} alt="Payment Methods" />
           </div>
         </div>
       </div>
@@ -77,7 +79,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <Dog />
+        <img src={DogSrc} alt="Dog" />
       </div>
 
       {/* Photo Grid */}
