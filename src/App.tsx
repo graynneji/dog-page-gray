@@ -5,7 +5,7 @@ import Icon4 from "./assets/001---Vet.svg?react"
 import Food from "./assets/Frame 1171276495.svg?react"
 import Shield from "./assets/shield-check.svg?react"
 import Payments from "./assets/Payments.svg?react"
-import Dog from "./assets/rectangle 15.svg?react"
+import Dog from "./assets/Rectangle 15.svg?react"
 import { KeyPointsCol, PhotoGridData, type KeyProps } from "./constants/index"
 import './App.css'
 import Buttons from "./components/Buttons"
